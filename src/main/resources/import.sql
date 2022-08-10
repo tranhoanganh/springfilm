@@ -5,7 +5,7 @@ INSERT INTO `users` (`username`, `password`, `role_id`) VALUES ('admin', '$2a$12
 
 INSERT INTO `category` (`name`, `image`) VALUES ('Hài hước', NULL),('Hành động', NULL);
 
-INSERT INTO `cast` (`name`, `description`, `image`) VALUES ('Russell Brand', 'Russell Brand', NULL),('Steve Carell', 'Steve Carell', NULL),('Jason Segel', 'Jason Segel', NULL);
+INSERT INTO `casts` (`name`, `description`, `image`) VALUES ('Russell Brand', 'Russell Brand', NULL),('Steve Carell', 'Steve Carell', NULL),('Jason Segel', 'Jason Segel', NULL);
 
 INSERT INTO `director` (`name`, `description`, `image`) VALUES ('Chris Renaud', 'Chris Renaud', NULL),('Shawn Levy', 'Shawn Levy', NULL);
 

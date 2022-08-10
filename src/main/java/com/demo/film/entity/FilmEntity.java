@@ -1,5 +1,6 @@
 package com.demo.film.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -43,7 +44,8 @@ public class FilmEntity {
     @Column(name = "update_at")
     private Timestamp updateAt;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @JsonIgnore
+    @ManyToMany()
     @JoinTable(name = "film_cast",
             joinColumns = @JoinColumn(name = "film_id"),
             inverseJoinColumns = @JoinColumn(name = "cast_id")

@@ -68,7 +68,7 @@ public class FilmServiceImpl implements FilmService {
                     return mapperDto.convertToDto(x);
                 })
                 .collect(Collectors.toList());
-        return listDto;
+        return null;
     }
 
     private List<FilmDto> convertListEntityToDto(List<FilmEntity> listEntity) {
