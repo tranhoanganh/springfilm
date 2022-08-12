@@ -11,9 +11,9 @@ import java.util.List;
 @AllArgsConstructor
 public class HomeDto {
 
-    private List<FilmDto> list_trending;
-    private List<FilmDto> list_hot;
-    private List<FilmDto> list_suggest;
-    private List<FilmDto> list_watch;
+    private List<FilmDto> trending;
+    private List<FilmDto> hot;
+    private List<FilmDto> popular;
+    private List<FilmDto> upcoming;
 
 }

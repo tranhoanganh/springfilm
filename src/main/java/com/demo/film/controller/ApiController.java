@@ -76,10 +76,10 @@ public class ApiController {
     public ResponseEntity getHomeFree() {
         BaseResponse res = new BaseResponse<>();
         HomeDto homeDto = new HomeDto();
-        homeDto.setList_trending(filmService.listTrending());
-        homeDto.setList_hot(filmService.listHot());
-        homeDto.setList_suggest(filmService.listSuggest());
-        homeDto.setList_watch(filmService.listWatch());
+        homeDto.setTrending(filmService.listTrending());
+        homeDto.setHot(filmService.listHot());
+        homeDto.setPopular(filmService.listSuggest());
+        homeDto.setUpcoming(filmService.listWatch());
         res.data = homeDto;
         return ResponseEntity.ok(res);
     }
